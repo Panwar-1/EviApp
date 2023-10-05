@@ -1,0 +1,6 @@
+<form [formGroup]="form" (submit)="submit()">
+    <h1 class="h-3 mb-3 fw-normal">Please Login</h1>
+    <input formControlName="email" class="form-control" type="text" placeholder="Email" required>
+    <input formControlName="password" class="form-control" type="text" placeholder="Password" required>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+</form>

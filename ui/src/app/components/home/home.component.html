@@ -1,0 +1,41 @@
+<div class="">
+<button class="w-100 btn btn-lg btn-primary" (click)="addEmployee()" >Add Employ</button>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Qualification</th>
+        <th>Mobile Number</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Confirm Password</th>
+        <th>City</th>
+        <th>State</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employ of message">
+            <td>{{employ['firstName']}}</td>
+            <td>{{employ['lastName']}}</td>
+            <td>{{employ['age']}}</td>
+            <td>{{employ['gender']}}</td>
+            <td>{{employ['qualification']}}</td>
+            <td>{{employ['mobileNumber']}}</td>
+            <td>{{employ['email']}}</td>
+            <td>{{employ['password']}}</td>
+            <td>{{employ['confirmPassword']}}</td>
+            <td>{{employ['city']}}</td>
+            <td>{{employ['state']}}</td>
+            <td>
+                <button class="btn btn-primary btn-sm" (click)="editEmployee(employ['_id'])">Edit</button>
+            </td>
+            <td>       
+                <button class="btn btn-danger btn-sm" (click)="deleteEmployee(employ['_id'])">Delete</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,77 @@
+<form [formGroup]="form" (submit)="submit()">
+    <h1 class="h-3 mb-4 fw-normal">Please Register</h1>
+    
+    <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" class="form-control" formControlName="firstName" placeholder="Enter your first name"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="firstName" class="form-control" formControlName="lastName" placeholder="Enter your last name"/>
+    </div>
+
+    <div class="form-group">
+        <label for="firstName">Age:</label>
+        <input type="number" id="age" class="form-control" formControlName="age" placeholder="Enter your age"/>
+    </div>
+
+    <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-check">
+          <input type="radio" id="male" class="form-check-input" value="Male" formControlName="gender" />
+          <label for="male" class="form-check-label ml-1">Male</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" id="female" class="form-check-input" value="Female" formControlName="gender" />
+          <label for="female" class="form-check-label ml-1">Female</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" id="other" class="form-check-input" value="Other" formControlName="gender" />
+          <label for="other" class="form-check-label ml-1">Other</label>
+        </div>
+      </div>
+
+
+    <div class="form-group">
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" class="form-control" formControlName="qualification" placeholder="Select your qualification">
+          <option value="School">School</option>
+          <option value="Graduation">Graduation</option>
+          <option value="Post Graduation">Post Graduation</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="firstName">Mobile Number:</label>
+        <input type="number" id="mobileNumber" class="form-control" formControlName="mobileNumber" placeholder="Enter your password"/>
+    </div>  
+
+
+    <div class="form-group">
+        <label for="lastName">Email:</label>
+        <input type="text" id="email" class="form-control" formControlName="email" placeholder="Enter your email"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Password:</label>
+        <input type="text" id="password" class="form-control" formControlName="password" placeholder="Enter your password"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Confirm Password:</label>
+        <input type="text" id="confirmPassword" class="form-control" formControlName="confirmPassword" placeholder="Enter your confirm password"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">City:</label>
+        <input type="text" id="city" class="form-control" formControlName="city" placeholder="Enter your city name"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">State:</label>
+        <input type="text" id="state" class="form-control" formControlName="state" placeholder="Enter your state name"/>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+</form>
